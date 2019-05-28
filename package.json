@@ -1,5 +1,5 @@
 {
-  "name": "react-combine-providers",
+  "name": "react-combine-provider",
   "version": "0.1.0",
   "main": "dist/index.js",
   "umd:main": "dist/react-combine-providers.umd.production.js",
