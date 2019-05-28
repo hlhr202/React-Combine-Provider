@@ -1,11 +1,21 @@
 import * as React from 'react';
 
-export const combineProviders = (providers: Array<React.ComponentType<any>>) => {
-  return ({ children, value }: React.PropsWithChildren<{ value?: any[] }>) =>
-    providers.reduce<React.ReactElement<React.ProviderProps<any>>>(
-      (tree, Provider, index) => (
-        <Provider value={value ? value[index] : undefined}>{tree}</Provider>
-      ),
+type IProviderOrWithValue<T = any> =
+  | React.ComponentType<T>
+  | [React.ComponentType<T>, T];
+
+export const combineProviders = (providers: Array<IProviderOrWithValue>) => {
+  return ({ children }: React.PropsWithChildren<{ value?: any[] }>) => {
+    return providers.reduce<React.ReactElement<React.ProviderProps<any>>>(
+      (tree, ProviderOrWithValue) => {
+        if (Array.isArray(ProviderOrWithValue)) {
+          const [Provider, value] = ProviderOrWithValue;
+          return <Provider {...value}>{tree}</Provider>;
+        } else {
+          return <ProviderOrWithValue>{tree}</ProviderOrWithValue>;
+        }
+      },
       children as React.ReactElement
     );
+  };
 };

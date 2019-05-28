@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import createUseContext from "constate";
 
-const useCounter2 = () => {
-  const [count, setCount] = useState(2);
+const useCounter2 = ({initialState = 2} = {}) => {
+  const [count, setCount] = useState(initialState);
   const decrement = () => setCount(count - 2);
   const increment = () => setCount(count + 2);
   return { count, decrement, increment };
