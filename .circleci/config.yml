@@ -21,14 +21,14 @@ jobs: # a collection of steps
           command: npm t
           environment:
             JEST_JUNIT_OUTPUT: reports/junit/js-test-results.xml
-      - run: # run coverage report
-          name: post coverage
-          command: npx circleci-coverage-github-reporter
+      # - run: # run coverage report
+      #     name: post coverage
+      #     command: npx circleci-coverage-github-reporter
       - store_artifacts: # special step to save test results as as artifact
           # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: reports/junit
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
-          path: coverage
+          path: ./coverage/lcov.info
           prefix: coverage
       - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: reports/junit
