@@ -8,4 +8,4 @@ dist
 .cache/
 .vscode/
 coverage/
-junit.xml
+test-report.xml
