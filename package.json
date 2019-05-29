@@ -4,9 +4,27 @@
     "main": "dist/index.js",
     "umd:main": "dist/react-combine-providers.umd.production.js",
     "module": "dist/react-combine-providers.es.production.js",
+    "homepage": "https://github.com/hlhr202/React-Combine-Provider",
+    "description": "Combine react providers in ease",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hlhr202/React-Combine-Provider"
+    },
+    "keywords": [
+        "react",
+        "context",
+        "redux",
+        "state management",
+        "constate",
+        "unstated",
+        "provider",
+        "consumer"
+    ],
     "typings": "dist/index.d.ts",
     "files": [
-        "dist"
+        "dist",
+        "LICENSE"
     ],
     "scripts": {
         "start": "tsdx watch",
