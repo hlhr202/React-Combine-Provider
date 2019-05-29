@@ -7,3 +7,5 @@ node_modules/
 dist
 .cache/
 .vscode/
+coverage/
+junit.xml

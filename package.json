@@ -1,54 +1,61 @@
 {
-  "name": "react-combine-provider",
-  "version": "0.1.0",
-  "main": "dist/index.js",
-  "umd:main": "dist/react-combine-providers.umd.production.js",
-  "module": "dist/react-combine-providers.es.production.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "tsdx test --env=jsdom"
-  },
-  "jest": {
-    "setupFilesAfterEnv": ["<rootDir>setupTests.ts"]
-  },
-  "peerDependencies": {
-    "react": ">=16"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
+    "name": "react-combine-provider",
+    "version": "0.1.0",
+    "main": "dist/index.js",
+    "umd:main": "dist/react-combine-providers.umd.production.js",
+    "module": "dist/react-combine-providers.es.production.js",
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "start": "tsdx watch",
+        "build": "tsdx build",
+        "test": "tsdx test --env=jsdom --runInBand --reporters=default --reporters=jest-junit"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "<rootDir>setupTests.ts"
+        ],
+        "reporters": [
+            "default",
+            "jest-junit"
+        ]
+    },
+    "peerDependencies": {
+        "react": ">=16"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    },
+    "prettier": {
+        "printWidth": 120,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "es5"
+    },
+    "devDependencies": {
+        "@types/enzyme": "^3.9.3",
+        "@types/enzyme-adapter-react-16": "^1.0.5",
+        "@types/jest": "^24.0.13",
+        "@types/react": "^16.8.18",
+        "@types/react-dom": "^16.8.4",
+        "constate": "^1.1.1",
+        "enzyme": "^3.9.0",
+        "enzyme-adapter-react-16": "^1.13.2",
+        "husky": "^2.3.0",
+        "jest-junit": "^6.4.0",
+        "prettier": "^1.17.1",
+        "pretty-quick": "^1.11.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "tsdx": "^0.5.11",
+        "tslib": "^1.9.3",
+        "typescript": "^3.4.5",
+        "unstated-next": "^1.1.0"
     }
-  },
-  "prettier": {
-    "printWidth": 120,
-    "tabWidth": 4,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "devDependencies": {
-    "@types/enzyme": "^3.9.3",
-    "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "^24.0.13",
-    "@types/react": "^16.8.18",
-    "@types/react-dom": "^16.8.4",
-    "constate": "^1.1.1",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.13.2",
-    "husky": "^2.3.0",
-    "prettier": "^1.17.1",
-    "pretty-quick": "^1.11.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "tsdx": "^0.5.11",
-    "tslib": "^1.9.3",
-    "typescript": "^3.4.5",
-    "unstated-next": "^1.1.0"
-  }
 }
