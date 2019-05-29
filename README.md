@@ -6,9 +6,9 @@
 ![TypeDefine](https://img.shields.io/npm/types/chalk.svg)
 ![NPM](https://img.shields.io/npm/l/react-combine-provider.svg)
 
-Combine react providers in ease
-Requires React >= 16.8.6
-Fully support [unstated-next](https://github.com/jamiebuilds/unstated-next) and [constate](https://github.com/diegohaz/constate)
+Combine react providers in ease  
+Requires React >= 16.8.6  
+Fully support [unstated-next](https://github.com/jamiebuilds/unstated-next) and [constate](https://github.com/diegohaz/constate)  
 
 ## Install
 
