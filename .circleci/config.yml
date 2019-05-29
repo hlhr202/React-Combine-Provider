@@ -20,14 +20,17 @@ jobs: # a collection of steps
           name: run test
           command: npm t
           environment:
-            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+            JEST_JUNIT_OUTPUT: "./junit.xml"
+      - run: # run coverage report
+          name: post coverage
+          command: npx circleci-coverage-github-reporter
       - store_artifacts: # special step to save test results as as artifact
           # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
-          path: junit.xml
+          path: "./junit.xml"
           prefix: tests
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: coverage
           prefix: coverage
       - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
-          path: junit.xml
+          path: "./junit.xml"
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
