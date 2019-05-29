@@ -1,6 +1,6 @@
 {
     "name": "react-combine-provider",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "dist/index.js",
     "umd:main": "dist/react-combine-providers.umd.production.js",
     "module": "dist/react-combine-providers.es.production.js",

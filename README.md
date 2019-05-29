@@ -1,9 +1,10 @@
-# React combine react
+# React Combine Provider
 
 ![npm](https://img.shields.io/npm/v/react-combine-provider.svg)
 [![Coverage Status](https://coveralls.io/repos/github/hlhr202/React-Combine-Provider/badge.svg?branch=master)](https://coveralls.io/github/hlhr202/React-Combine-Provider?branch=master)
 [![CircleCI](https://circleci.com/gh/hlhr202/React-Combine-Provider.svg?style=shield)](https://circleci.com/gh/hlhr202/React-Combine-Provider)
 ![TypeDefine](https://img.shields.io/npm/types/chalk.svg)
+![NPM](https://img.shields.io/npm/l/react-combine-provider.svg)
 
 Combine react providers in ease
 Fully support [unstated-next](https://github.com/jamiebuilds/unstated-next) and [constate](https://github.com/diegohaz/constate)
