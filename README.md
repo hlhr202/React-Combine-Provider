@@ -24,7 +24,7 @@ npm install --save react-combine-provider
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { createContainer } from 'unstated-next';
-import { combineProviders } from 'react-combine-reducer';
+import { combineProviders } from 'react-combine-providers';
 
 const useCounter1 = (initialState = 1) => {
     const [count, setCount] = useState(initialState);
