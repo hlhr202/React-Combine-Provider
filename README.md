@@ -1,10 +1,10 @@
 # React Combine Provider
 
-![npm](https://img.shields.io/npm/v/react-combine-provider.svg)
+[![npm](https://img.shields.io/npm/v/react-combine-provider.svg)](https://www.npmjs.com/package/react-combine-provider)
 [![Coverage Status](https://coveralls.io/repos/github/hlhr202/React-Combine-Provider/badge.svg?branch=master)](https://coveralls.io/github/hlhr202/React-Combine-Provider?branch=master)
 [![CircleCI](https://circleci.com/gh/hlhr202/React-Combine-Provider.svg?style=shield)](https://circleci.com/gh/hlhr202/React-Combine-Provider)
 ![TypeDefine](https://img.shields.io/npm/types/chalk.svg)
-![NPM](https://img.shields.io/npm/l/react-combine-provider.svg)
+[![License](https://img.shields.io/npm/l/react-combine-provider.svg)](https://github.com/hlhr202/React-Combine-Provider/blob/master/LICENSE)
 
 Combine react providers in ease  
 Requires React >= 16.8.0  
