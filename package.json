@@ -11,7 +11,7 @@
     "scripts": {
         "start": "tsdx watch",
         "build": "tsdx build",
-        "test": "tsdx test --env=jsdom --runInBand --reporters=default --reporters=jest-junit --collectCoverage=true"
+        "test": "tsdx test --env=jsdom --runInBand --reporters=default --reporters=jest-junit --coverage --coverageReporters=text-lcov | coveralls"
     },
     "jest": {
         "setupFilesAfterEnv": [
@@ -45,6 +45,7 @@
         "@types/react": "^16.8.18",
         "@types/react-dom": "^16.8.4",
         "constate": "^1.1.1",
+        "coveralls": "^3.0.3",
         "enzyme": "^3.9.0",
         "enzyme-adapter-react-16": "^1.13.2",
         "husky": "^2.3.0",

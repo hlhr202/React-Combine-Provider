@@ -21,6 +21,7 @@ jobs: # a collection of steps
           command: npm t
           environment:
             JEST_JUNIT_OUTPUT: reports/junit/js-test-results.xml
+            COVERALLS_REPO_TOKEN: Q64jx5iwPfKAZ06OLXCNmcOZxPE6nHZUQ
       # - run: # run coverage report
       #     name: post coverage
       #     command: npx circleci-coverage-github-reporter
