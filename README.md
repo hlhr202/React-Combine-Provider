@@ -95,3 +95,7 @@ function App() {
 
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
+
+## TODO
+  - [] reference of hooks in another hooks
+  - [] dynamic hooks injection
