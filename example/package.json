@@ -8,8 +8,8 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "constate": "^1.1.1",
-    "react-app-polyfill": "^1.0.0",
+    "constate": "^1.2.0",
+    "react-app-polyfill": "^1.0.3",
     "store": "^2.0.12",
     "unstated-next": "^1.1.0"
   },
@@ -18,8 +18,8 @@
     "react-dom": "../node_modules/react-dom"
   },
   "devDependencies": {
-    "@types/react": "^16.8.15",
-    "@types/react-dom": "^16.8.4",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
     "parcel": "^1.12.3",
     "typescript": "^3.4.5"
   }
